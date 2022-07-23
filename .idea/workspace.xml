@@ -1,8 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="ALL" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="db9f2ca0-ca3f-4df8-8b4d-47859a26ed87" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/go.mod" afterDir="false" />
+    <list default="true" id="db9f2ca0-ca3f-4df8-8b4d-47859a26ed87" name="Changes" comment="first commit">
+      <change afterPath="$PROJECT_DIR$/gee_implement/v1-http-base/base1/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v1-http-base/base2/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v1-http-base/base3/engine.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v1-http-base/base3/main.go" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -10,7 +17,14 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.16.3/libexec" />
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Go File" />
+      </list>
+    </option>
+  </component>
+  <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.17.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
@@ -18,23 +32,88 @@
     <option name="indexEntireGoPath" value="false" />
   </component>
   <component name="ProjectId" id="22SoW6g2g9vPEHwmolaxeaoshtG" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="foldersAlwaysOnTop" value="false" />
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="DefaultGoTemplateProperty" value="Go File" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
+    <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
     <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gee_implement/v1-http-base/base1" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Go Build.go build gee_study/gee_implement/v1-http-base/base3">
+    <configuration name="go build gee_study/gee_implement/v1-http-base" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gee_study" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gee_study/gee_implement/v1-http-base" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/gee_implement/v1-http-base/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gee_study/gee_implement/v1-http-base/base2" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gee_study" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gee_study/gee_implement/v1-http-base/base2" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/gee_implement/v1-http-base/base2/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="go build gee_study/gee_implement/v1-http-base/base3" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
+      <module name="gee_study" />
+      <working_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gee_study/gee_implement/v1-http-base/base3" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$/gee_implement/v1-http-base/base3/main.go" />
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Go Build.go build gee_study/gee_implement/v1-http-base/base3" />
+        <item itemvalue="Go Build.go build gee_study/gee_implement/v1-http-base/base2" />
+        <item itemvalue="Go Build.go build gee_study/gee_implement/v1-http-base" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="first commit" />
+    <option name="LAST_COMMIT_MESSAGE" value="first commit" />
   </component>
   <component name="VgoProject">
     <integration-enabled>true</integration-enabled>
