@@ -5,10 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db9f2ca0-ca3f-4df8-8b4d-47859a26ed87" name="Changes" comment="first commit">
-      <change afterPath="$PROJECT_DIR$/gee_implement/v2-context/context.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee_implement/v2-context/gee.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee_implement/v2-context/gee_test.go" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/gee_implement/v2-context/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v3-dynamic-route/context.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v3-dynamic-route/main.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v3-dynamic-route/router.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v3-dynamic-route/router_test.go" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/gee_implement/v3-dynamic-route/trie.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
@@ -27,6 +28,14 @@
   <component name="GOROOT" url="file:///opt/homebrew/Cellar/go/1.17.5/libexec" />
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitSEFilterConfiguration">
+    <file-type-list>
+      <filtered-out-file-type name="LOCAL_BRANCH" />
+      <filtered-out-file-type name="REMOTE_BRANCH" />
+      <filtered-out-file-type name="TAG" />
+      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
+    </file-type-list>
   </component>
   <component name="GoLibraries">
     <option name="indexEntireGoPath" value="false" />
@@ -50,34 +59,19 @@
     <property name="go.formatter.settings.were.checked" value="true" />
     <property name="go.import.settings.migrated" value="true" />
     <property name="go.modules.go.list.on.any.changes.was.set" value="true" />
-    <property name="last_opened_file_path" value="$USER_HOME$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/gee_implement/v3-dynamic-route" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/gee_implement/v3-dynamic-route" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/gee_implement/v1-http-base/base1" />
     </key>
   </component>
-  <component name="RunManager" selected="Go Test.TestGeeV2 in gee_study/gee_implement/v2-context">
-    <configuration name="go build gee_study/gee_implement/v1-http-base" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gee_study" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="gee_study/gee_implement/v1-http-base" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gee_implement/v1-http-base/main.go" />
-      <method v="2" />
-    </configuration>
-    <configuration name="go build gee_study/gee_implement/v1-http-base/base2" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
-      <module name="gee_study" />
-      <working_directory value="$PROJECT_DIR$" />
-      <kind value="PACKAGE" />
-      <package value="gee_study/gee_implement/v1-http-base/base2" />
-      <directory value="$PROJECT_DIR$" />
-      <filePath value="$PROJECT_DIR$/gee_implement/v1-http-base/base2/main.go" />
-      <method v="2" />
-    </configuration>
+  <component name="RunManager" selected="Go Test.TestGetRouter in gee_study/gee_implement/v3-dynamic-route">
     <configuration name="go build gee_study/gee_implement/v1-http-base/base3" type="GoApplicationRunConfiguration" factoryName="Go Application" temporary="true" nameIsGenerated="true">
       <module name="gee_study" />
       <working_directory value="$PROJECT_DIR$" />
@@ -85,6 +79,18 @@
       <package value="gee_study/gee_implement/v1-http-base/base3" />
       <directory value="$PROJECT_DIR$" />
       <filePath value="$PROJECT_DIR$/gee_implement/v1-http-base/base3/main.go" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestAddRouter in gee_study/gee_implement/v3-dynamic-route" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gee_study" />
+      <working_directory value="$PROJECT_DIR$/gee_implement/v3-dynamic-route" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gee_study/gee_implement/v3-dynamic-route" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestAddRouter\E$" />
       <method v="2" />
     </configuration>
     <configuration name="TestGeeV2 in gee_study/gee_implement/v2-context" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
@@ -99,12 +105,37 @@
       <pattern value="^\QTestGeeV2\E$" />
       <method v="2" />
     </configuration>
+    <configuration name="TestGetRouter in gee_study/gee_implement/v3-dynamic-route" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gee_study" />
+      <working_directory value="$PROJECT_DIR$/gee_implement/v3-dynamic-route" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gee_study/gee_implement/v3-dynamic-route" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestGetRouter\E$" />
+      <method v="2" />
+    </configuration>
+    <configuration name="TestParsePattern in gee_study/gee_implement/v3-dynamic-route" type="GoTestRunConfiguration" factoryName="Go Test" temporary="true" nameIsGenerated="true">
+      <module name="gee_study" />
+      <working_directory value="$PROJECT_DIR$/gee_implement/v3-dynamic-route" />
+      <root_directory value="$PROJECT_DIR$" />
+      <kind value="PACKAGE" />
+      <package value="gee_study/gee_implement/v3-dynamic-route" />
+      <directory value="$PROJECT_DIR$" />
+      <filePath value="$PROJECT_DIR$" />
+      <framework value="gotest" />
+      <pattern value="^\QTestParsePattern\E$" />
+      <method v="2" />
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Go Test.TestGetRouter in gee_study/gee_implement/v3-dynamic-route" />
+        <item itemvalue="Go Test.TestAddRouter in gee_study/gee_implement/v3-dynamic-route" />
+        <item itemvalue="Go Test.TestParsePattern in gee_study/gee_implement/v3-dynamic-route" />
         <item itemvalue="Go Test.TestGeeV2 in gee_study/gee_implement/v2-context" />
         <item itemvalue="Go Build.go build gee_study/gee_implement/v1-http-base/base3" />
-        <item itemvalue="Go Build.go build gee_study/gee_implement/v1-http-base/base2" />
-        <item itemvalue="Go Build.go build gee_study/gee_implement/v1-http-base" />
       </list>
     </recent_temporary>
   </component>
