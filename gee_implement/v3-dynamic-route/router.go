@@ -84,6 +84,28 @@ func (r *router) getRoute(method string , path string) (*node , map[string]strin
 	return nil , nil
 }
 
+
+// 获取该方法下的所有
+func (r *router) getRoutes(method string) []*node {
+	root, ok := r.roots[method]
+	if !ok {
+		return nil
+	}
+	nodes := make([]*node, 0)
+	root.travel(&nodes)
+	return nodes
+}
+
+// 返回当前节点的所有子节点
+func (n *node) travel(list *([]*node)) {
+	if n.pattern != "" {
+		*list = append(*list, n)
+	}
+	for _, child := range n.children {
+		child.travel(list)
+	}
+}
+
 // 处理
 func (r *router) handler(c *Context) {
 	n, params := r.getRoute(c.Method, c.Path)
